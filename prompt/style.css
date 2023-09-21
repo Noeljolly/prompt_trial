@@ -1,0 +1,110 @@
+
+
+/* Styles for the Timeline Page */
+.page.page-timeline {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1d22;
+    align-items: center;
+}
+
+.sm-section-title {
+    font-family: "Source Sans 3, sans-serif";
+    font-size: 68px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.timeline-cards {
+    display: flex;
+}
+
+.timeline-card-left,
+.timeline-card-right {
+    display: flex;
+}
+
+.timeline-text-left,
+.timeline-text-right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    text-align: right;
+}
+
+.yellow-lg-card-title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 16px;
+    color: #fecc02;
+}
+
+.sm-para {
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.timeline-card-icon {
+    /* Add styles for the icon */
+}
+
+.yellow-btn {
+    color: #000;
+    background-color: #fecc02;
+    border: none;
+    padding: 13px 54px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.yellow-btn:hover {
+    background-color: #f0b400;
+}
+
+/* Styles for the Tile Card Page */
+.page.page-tile-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.tile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-image {
+    flex: 1;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.yellow-md-card-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fecc02;
+    letter-spacing: 2px;
+}
+
+.sm-para {
+    font-size: 26px;
+    font-weight: 400;
+    color: #fff;
+}

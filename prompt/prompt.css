@@ -1,0 +1,233 @@
+{
+	type : PAGE,
+	name : "Timeline",
+    html_element : div,
+    styles : {
+        width: 100vw
+        height: 100vh
+        display:flex
+        flex-direction: column
+        background-color: #1f1d22
+        align items : center
+    }
+	content: [
+			{
+				type : atom,
+				name: “sm section title”
+				html_element : p
+				styles : {
+					Font-family: "Source Sans 3, sans-serif"
+					Font-size : 68px
+					Font-weight 600
+					Text-align : center
+                    font-color : #fff
+                }
+                content: "BENEFITS FOR NOW.<br> SECURITY FOR YOUR FUTURE"
+			}
+			{
+                type : molecule,
+				name : “timeline cards left”,
+				html_element : div,
+                styles :{
+                    display flex
+                }
+                content : [
+                        {
+                                type : molecule,
+                                name : "timeline-text-left"
+                                html_element : div,
+                                styles :{
+                                    display flex 
+                                    flex-direction column
+                                    margin-right 50px
+                                    text-align right
+                                }
+                                content : [{
+                                            type : atom,
+                                            name : "yellow lg card title"
+                                            html_element : h1,
+                                            styles : {
+                                                font-size: 2.3rem
+                                                font-weight 600
+                                                letter-spacing 2px
+                                                margin-top 16px
+                                                color #fecc02
+                                                
+                                            } 
+                                            content : "lorem"
+                                         }
+                                         {
+                                            type : atom,
+                                            name : "sm para"
+                                            html_element : p,
+                                            styles : {
+                                                font-size  1.7rem
+                                                
+                                            }
+                                            content : "is simply dummy text of the printing and typesetting industry."
+                                         }
+                                        ]
+                                       
+                        }
+                        {
+                                type : atom,
+                                name : "timeline card icon",
+                                html_element : img,
+                        }
+                        
+                        ] Create this Molecule 3 times
+            } 
+            {
+                type : molecule,
+				name : “timeline cards right”,
+				html_element : div,
+                styles :{
+                    display flex
+                }
+                content : [
+                        {
+                                type : atom,
+                                name : "timeline card icon"
+                                html_element : img,
+                        }
+                        {
+                                type : molecule,
+                                name : "timeline-text-right"
+                                html_element : div,
+                                styles :{
+                                    display flex 
+                                    flex-direction column
+                                    margin-left 50px
+                                    
+                                }
+                                content : [{
+                                            type : atom,
+                                            name : "yellow lg card title"
+                                            html_element : h1,
+                                            styles : {
+                                                font-size: 2.3rem
+                                                font-weight 600
+                                                letter-spacing 2px
+                                                margin-top 16px
+                                                color #fecc02
+                                                
+                                            } 
+                                            content : "lorem"
+                                         }
+                                         {
+                                            type : atom,
+                                            name : "sm para"
+                                            html_element : p,
+                                            styles : {
+                                                font-size  1.7rem
+                                                color: #fff;
+                                                
+                                            }
+                                            content : "is simply dummy text of the printing and typesetting industry."
+                                         }
+                                        ]
+                                       
+                        }
+                        
+                        
+                        ] Create this Molecule 3 times
+            } 
+            {
+                type : atom,
+                name : "yellow btn"
+                html_element : button,
+                styles : {
+                            color #000
+                            background-color #fecc02
+                            border none
+                            padding 13px 54px
+                            font-size 22px
+                            font-weight 600
+                         }
+                content : "EXPLORE BENEFITS"
+                behavior : {
+                    on hover: #f0b400;
+                    on click : run a on-click event to scroll down to tile card page
+                }
+            }
+
+		]
+}
+
+{
+	type : PAGE,
+	name : "Tile Card",
+    html_element : div,
+    styles : {
+        width: 100%
+        height: 100%
+        display:flex
+        flex-direction: column
+    }
+    content : [
+        {
+            type: Organism,
+            name : "Card container",
+            html_element : div,
+            styles{
+                display flex
+                width 100%
+                height 50%
+            }
+            content :[
+                    {
+                        type : Molecule,
+                        name : "tile card"
+                        html_element : div,
+                        styles{
+                            display flex
+                            flex-direction column
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        content : [
+                            {
+                                type : atom,
+                                name : "tile image"
+                                html_element : img,
+                                styles{
+                                    flex: 1
+                                    height: 40vh
+                                    background-size: cover
+                                    background-repeat: no-repeat
+                                    background-position: center
+                                    position: relative
+                                    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 1)
+                                }
+
+
+                            }
+                            {
+                                type : atom,
+                                name : "yellow md card title"
+                                html_element : h1,
+                                styles{
+                                    font-size 24px
+                                    text-transform uppercase
+                                    color #fecc02
+                                    letter-spacing 2px
+                                }
+                                content : "LOREM"
+                            }
+                            {
+                                type : atom,
+                                name : "sm para"
+                                html_element : p,
+                                styles{
+                                    font-size: 26px;
+                                    font-weight: 400;
+                                    color: #fff;
+                                }
+                                content : "is simply dummy text of the printing and typesetting industry."
+                            }
+                        ] Create this molecule 3 times
+                    }
+            ] 
+        }
+    ] Create this organism again 
+}    
