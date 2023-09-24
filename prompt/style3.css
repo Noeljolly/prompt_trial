@@ -1,0 +1,389 @@
+*{
+  margin: 0;
+}
+
+/* CSS */
+
+.benefits {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1d22;
+  align-items: center;
+}
+
+.sm-section-title {
+  font-family: 'Source Sans 3', sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 68px;
+  font-weight: 600;
+  padding-top: 85px;
+  margin-bottom: 85px;
+  line-height: 68px;
+}
+
+.timeline-cards-left, .timeline-cards-right {
+  display: flex;
+  flex-direction: column;
+}
+.timeline-cards-right{
+   
+    color: #fff;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 240px 0 0 0;
+
+}
+
+.timeline-text-right{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.timeline-cards-left{
+    
+    color: #fff;
+    align-items: flex-end;
+    margin: -158px 0px 0px 0px;
+    justify-content: space-evenly;
+
+
+}
+
+.timeline-card-middle {
+  margin-top: 242px;
+  margin-bottom: 204px;
+}
+
+.timeline-text-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  text-align: right;
+}
+
+.yellow-lg-card-title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 16px;
+  color: #fecc02;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.sm-para {
+  font-size: 1.7rem;
+  color: #fff;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.timeline-card-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.dotted-line {
+  margin-top: 32px;
+  height: 104%;
+}
+
+.yellow-btn {
+  color: #000;
+  background-color: #fecc02;
+  border: none;
+  padding: 13px 54px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 144px;
+  margin-bottom: 170px;
+  transition: background-color 0.3s;
+}
+
+.yellow-btn:hover {
+  background-color: #f0b400;
+}
+
+.timeline-card-container {
+  display: flex;
+  
+}
+
+.timeline-wrapper {
+  display: flex;
+}
+
+
+@media (max-width: 1024px){
+
+
+  .timeline-cards-left,.timeline-cards-right{
+    width: 40%;
+  }
+
+  .timeline-cards-right{
+    margin-top: 270px;
+  }
+  
+  .timeline-text-left{
+    margin-right: 30px;
+  }
+
+  .timeline-text-right{
+    margin-left: 30px;
+  }
+  .sm-para{
+    font-size: 1.0rem;
+  }
+  .yellow-lg-card-title{
+    font-size: 1.3rem;
+  }
+
+  .timeline-card-icon{
+    width: 80px;
+    height: 80px;
+
+  }
+
+  .timeline-card-middle{
+    margin-top: 246px;
+    margin-bottom: 238px;
+  }
+}
+
+@media (max-width: 900px){
+  .sm-section-title{
+    font-size: 2.8rem;
+    padding: 50px;
+    margin: 0;
+  }
+
+  .yellow-lg-card-title{
+    font-size: 1.0rem;
+  }
+
+  .sm-para{
+    font-size: .8rem;
+  }
+
+  .timeline-card-icon{
+    width: 70px;
+    height: 70px;
+  }
+  .timeline-cards-left,.timeline-cards-right{
+    width: 35%;
+  }
+  .timeline-cards-left{
+    margin-top: -130px;
+  }
+  .yellow-btn{
+    transform: scale(.8);
+    margin-bottom: 90px;
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 500px){
+  .dotted-line{
+    display: none;
+  }
+
+  .sm-section-title{
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin: 10px;
+    padding: 0;
+  }
+  .timeline-wrapper{
+    height: 75%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-cards-left{
+    margin: 0;
+    margin-top: 25px;
+  }
+  .timeline-cards-left,.timeline-cards-right{
+    width: 75%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .timeline-cards-left>.timeline-card-container{
+    flex-direction: row-reverse;
+    
+  }
+  .timeline-text-left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+
+  }
+  .timeline-cards-left>.timeline-card-container>.timeline-text-left{
+    margin-left: 50px;
+    flex-direction: column;
+  }
+
+  .yellow-lg-card-title{
+    font-size: .9rem;
+    margin: 0;
+  }
+
+  .sm-para{
+    font-size: .6rem;
+    text-align: left;
+  }
+  .timeline-card-icon{
+    width: 45px;
+    height: 45px;
+  }
+
+  .timeline-cards-right{
+    margin: 0;
+  }
+  .timeline-text-right{
+    margin-left: 50px;
+  }
+  .timeline-card-middle{
+    margin: 0;
+  }
+  .timeline-card-container{
+    margin-bottom: 10px;
+  }
+  .yellow-btn{
+    padding: 8px 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* More Benefits */
+.more-benefits {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+}
+
+.tile-card-tile-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.text-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow-md-card-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fecc02;
+  letter-spacing: 2px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.text-container .sm-para {
+  font-size: 26px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+
+
+
+/* Existing CSS... */
+
+/* Breakpoint for devices with a width of 1024px and below */
+@media (max-width: 1024px) {
+  .card-container {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .more-benefits {
+      flex-direction: row;
+      height: 700px;
+  }
+}
+
+/* Breakpoint for devices with a width of 768px and below */
+@media (max-width: 768px) {
+  .text-container .sm-para {
+      font-size: 1.2rem;
+  }
+
+  .yellow-md-card-title {
+      font-size: 1.3rem;
+  }
+}
+
+/* Breakpoint for devices with a width of 425px and below */
+@media (max-width: 425px) {
+  .more-benefits {
+      flex-direction: column;
+      height: 100%;
+  }
+
+  .card-container {
+      height: 300px;
+  }
+
+  .tile-card-tile-image{
+    background-position-y: -23px;
+  }
+  .text-container .sm-para {
+      font-size: 0.8rem;
+  }
+
+  .yellow-md-card-title {
+      font-size: 0.9rem;
+  }
+}
+
+/* Existing CSS... */
+
+/* Breakpoint for 4K screens and above */
+@media (min-width: 2000px) {
+  .sm-para {
+      font-size: 36px;
+  }
+
+  .text-container .yellow-md-card-title {
+      font-size: 38px;
+  }
+}
+

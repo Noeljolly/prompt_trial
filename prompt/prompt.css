@@ -1,68 +1,79 @@
 {
-	type : PAGE,
-	name : "Timeline",
-    html_element : div,
+	type : "PAGE",
+	name : "Benefits",
+    html_element : "div",
     styles : {
-        width: 100vw
-        height: 100vh
-        display:flex
-        flex-direction: column
-        background-color: #1f1d22
-        align items : center
+        width : 100vw;
+        height : 100%;
+        display :flex;
+        flex-direction : column;
+        background-color : #1f1d22;
+        align-items : center;
     }
 	content: [
 			{
-				type : atom,
-				name: “sm section title”
-				html_element : p
+				type : "atom",
+				name: "sm section title"
+				html_element : "p"
 				styles : {
-					Font-family: "Source Sans 3, sans-serif"
-					Font-size : 68px
-					Font-weight 600
-					Text-align : center
-                    font-color : #fff
+					Font-family: 'Source Sans 3', sans-serif;
+					color: #fff;
+                    text-align: center;
+                    font-size: 68px;
+                    font-weight: 600;
+                    padding-top: 85px;
+                    margin-bottom: 85px;
+                    line-height: 68px;
                 }
                 content: "BENEFITS FOR NOW.<br> SECURITY FOR YOUR FUTURE"
 			}
 			{
-                type : molecule,
-				name : “timeline cards left”,
-				html_element : div,
+                type : "molecule",
+				name : "timeline-cards-left",
+				html_element : "div",
                 styles :{
-                    display flex
+                    display: flex;
+                    flex-direction: column;
+                    color: #fff;
+                    align-items: flex-end;
+                    margin: -158px 0px 0px 0px;
+                    justify-content: space-evenly;
+
+                    
                 }
                 content : [
                         {
-                                type : molecule,
+                                type : "molecule",
                                 name : "timeline-text-left"
-                                html_element : div,
+                                html_element : "div",
                                 styles :{
-                                    display flex 
-                                    flex-direction column
-                                    margin-right 50px
-                                    text-align right
+                                    display: flex; 
+                                    flex-direction: column;
+                                    margin-right: 50px;
+                                    text-align: right;
                                 }
                                 content : [{
-                                            type : atom,
+                                            type : "atom",
                                             name : "yellow lg card title"
-                                            html_element : h1,
+                                            html_element : "h1",
                                             styles : {
-                                                font-size: 2.3rem
-                                                font-weight 600
-                                                letter-spacing 2px
-                                                margin-top 16px
-                                                color #fecc02
+                                                font-size: 2.3rem;
+                                                font-weight: 600;
+                                                letter-spacing: 2px;
+                                                margin-top: 16px;
+                                                color: #fecc02;
                                                 
                                             } 
                                             content : "lorem"
                                          }
                                          {
-                                            type : atom,
+                                            type : "atom",
                                             name : "sm para"
-                                            html_element : p,
+                                            html_element : "p",
                                             styles : {
-                                                font-size  1.7rem
-                                                
+                                                font-size: 1.7rem;
+                                                color: #fff;
+                                                font-family: 'Source Sans 3', sans-serif;
                                             }
                                             content : "is simply dummy text of the printing and typesetting industry."
                                          }
@@ -70,57 +81,81 @@
                                        
                         }
                         {
-                                type : atom,
+                                type : "atom",
                                 name : "timeline card icon",
-                                html_element : img,
+                                html_element : "img",
+                                styles{
+                                    width: 100px;
+                                    height: 100px;
+                                }
                         }
                         
                         ] Create this Molecule 3 times
             } 
             {
-                type : molecule,
-				name : “timeline cards right”,
-				html_element : div,
-                styles :{
-                    display flex
+                type : "atom",
+                name : "dotted_line",
+                html_element : "div",
+                styles{
+                    margin-top: 32px;
+                    height: 104%;
+                
                 }
+            }
+            {
+                type : "molecule",
+				name : "timeline-cards-right",
+				html_element : "div",
+                styles :{
+                    display: flex;
+                    color: #fff;
+                    align-items: flex-start;
+                    justify-content: space-evenly;
+                    margin: 240px 0 0 0;
+                }
+                
                 content : [
                         {
-                                type : atom,
-                                name : "timeline card icon"
-                                html_element : img,
+                            type : "atom",
+                            name : "timeline card icon",
+                            html_element : "img",
+                            styles{
+                                width: 100px;
+                                 height: 100px;
+                            }
                         }
                         {
-                                type : molecule,
+                                type : "molecule",
                                 name : "timeline-text-right"
-                                html_element : div,
+                                html_element : "div",
                                 styles :{
-                                    display flex 
-                                    flex-direction column
-                                    margin-left 50px
-                                    
+                                    display: flex; 
+                                    flex-direction: column;
+                                    margin-left: 50px;
+                                    text-align: left;
                                 }
                                 content : [{
-                                            type : atom,
+                                            type : "atom",
                                             name : "yellow lg card title"
-                                            html_element : h1,
+                                            html_element : "h1",
                                             styles : {
-                                                font-size: 2.3rem
-                                                font-weight 600
-                                                letter-spacing 2px
-                                                margin-top 16px
-                                                color #fecc02
+                                                font-size: 2.3rem;
+                                                font-weight: 600;
+                                                letter-spacing: 2px;
+                                                margin-top: 16px;
+                                                color: #fecc02;
                                                 
                                             } 
                                             content : "lorem"
                                          }
                                          {
-                                            type : atom,
+                                            type : "atom",
                                             name : "sm para"
-                                            html_element : p,
+                                            html_element : "p",
                                             styles : {
-                                                font-size  1.7rem
+                                                font-size: 1.7rem;
                                                 color: #fff;
+                                                 font-family: 'Source Sans 3', sans-serif;
                                                 
                                             }
                                             content : "is simply dummy text of the printing and typesetting industry."
@@ -130,24 +165,30 @@
                         }
                         
                         
-                        ] Create this Molecule 3 times
+                        ] Create this Molecule 3 times with 2nd molecule having 
+                        styles{
+                            margin-top: 242px;
+                            margin-bottom: 204px;
+                        }
             } 
             {
-                type : atom,
+                type : "atom",
                 name : "yellow btn"
-                html_element : button,
+                html_element : "button",
                 styles : {
-                            color #000
-                            background-color #fecc02
-                            border none
-                            padding 13px 54px
-                            font-size 22px
-                            font-weight 600
+                            color: #000;
+                            background-color: #fecc02;
+                            border: none;
+                            padding: 13px 54px;
+                            font-size: 22px;
+                            font-weight: 600;
+                            margin-top: 144px;
+                            margin-bottom: 170px;
                          }
                 content : "EXPLORE BENEFITS"
                 behavior : {
                     on hover: #f0b400;
-                    on click : run a on-click event to scroll down to tile card page
+                    on click : run a on-click event to scroll down to More Benefits page
                 }
             }
 
@@ -155,73 +196,68 @@
 }
 
 {
-	type : PAGE,
-	name : "Tile Card",
-    html_element : div,
+	type : "PAGE",
+	name : "More Benefits",
+    html_element : "div",
     styles : {
-        width: 100%
-        height: 100%
-        display:flex
-        flex-direction: column
+        width : 100%;
+        height : 100%;
+        display : flex;
+        flex-direction : column;
+        Font-family: "Source Sans 3, sans-serif";
     }
     content : [
         {
-            type: Organism,
+            type: "Organism",
             name : "Card container",
-            html_element : div,
+            html_element : "div",
             styles{
-                display flex
-                width 100%
-                height 50%
+                display : flex;
+                width : 100%;
             }
             content :[
                     {
-                        type : Molecule,
-                        name : "tile card"
-                        html_element : div,
+                        type : "Molecule",
+                        name : "tile card_tile image"
+                        html_element : "div",
                         styles{
-                            display flex
-                            flex-direction column
-                            justify-content: center;
-                            align-items: center;
+                                    display: flex;
+                                    flex-direction : column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex: 1;
+                                    height: 40vh;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    position: relative;
+                                    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 1);
                         }
+                      
                         content : [
                             {
-                                type : atom,
-                                name : "tile image"
-                                html_element : img,
-                                styles{
-                                    flex: 1
-                                    height: 40vh
-                                    background-size: cover
-                                    background-repeat: no-repeat
-                                    background-position: center
-                                    position: relative
-                                    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 1)
-                                }
-
-
-                            }
-                            {
-                                type : atom,
+                                type : "atom",
                                 name : "yellow md card title"
-                                html_element : h1,
+                                html_element : "h1",
                                 styles{
-                                    font-size 24px
-                                    text-transform uppercase
-                                    color #fecc02
-                                    letter-spacing 2px
+                                    font-size : 24px;
+                                    text-transform : uppercase;
+                                    color : #fecc02;
+                                    letter-spacing : 2px;
+                                    font-family: 'Source Sans 3', sans-serif;
                                 }
                                 content : "LOREM"
                             }
                             {
-                                type : atom,
+                                type : "atom",
                                 name : "sm para"
-                                html_element : p,
+                                html_element : "p",
                                 styles{
                                     font-size: 26px;
                                     font-weight: 400;
                                     color: #fff;
+                                    text align: center;
+                                    font-family: 'Source Sans 3', sans-serif;
                                 }
                                 content : "is simply dummy text of the printing and typesetting industry."
                             }
@@ -231,3 +267,43 @@
         }
     ] Create this organism again 
 }    
+
+
+1024px
+.card-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.more-benefits{
+    flex-direction: row;
+    height: 700px;
+}
+
+768px
+.sm-para{
+    1.2rem
+}
+
+.yellow-md-card-title{
+    font-size: 1.3rem;
+}
+
+425px
+
+.more-benefits{
+    flex-direction: column;
+}
+
+.card-container{
+    height: 300px;
+}
+
+.sm-para{
+    0.8rem
+}
+
+.yellow-md-card-title{
+    font-size: 0.9rem;
+}

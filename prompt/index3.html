@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile Card</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <div class="benefits">
+    <p class="sm-section-title">BENEFITS FOR NOW.<br> SECURITY FOR YOUR FUTURE</p>
+  
+    <div class="timeline-wrapper"> 
+    <div class="timeline-cards-left">
+        <!-- Molecule repeated 3 times as mentioned -->
+        <div class="timeline-card-container">
+          <div class="timeline-text-left">
+              <h1 class="yellow-lg-card-title">EDUCATION</h1>
+              <p class="sm-para">Earn full tuition for 4+ years & <br>
+                merit-based scholarships</p>
+          </div>
+          <img class="timeline-card-icon" src="design-images/education-icon-white.png" alt="Timeline Icon">
+      </div>
+      <div class="timeline-card-container">
+        <div class="timeline-text-left">
+            <h1 class="yellow-lg-card-title">HOUSING</h1>
+            <p class="sm-para">Paid rent and utilities</p>
+        </div>
+        <img class="timeline-card-icon" src="design-images/housing-icon-white.png" alt="Timeline Icon">
+      </div>
+      <div class="timeline-card-container">
+        <div class="timeline-text-left">
+            <h1 class="yellow-lg-card-title">LOAN</h1>
+            <p class="sm-para">Purchase a home with 0% down</p>
+        </div>
+        <img class="timeline-card-icon" src="design-images/loan-icon-white.png" alt="Timeline Icon">
+      </div>
+    
+
+        <!-- Repeat above for the 2 other times -->
+    </div>
+
+    <div class="dotted-line">
+      <svg width="200" height="1000" xmlns="http://www.w3.org/2000/svg">
+        <!-- Initial 6 grey dots -->
+        <circle cx="100" cy="0" r="1.5" fill="#808080"/>
+        <circle cx="100" cy="15" r="1.5" fill="#808080"/>
+        <circle cx="100" cy="30" r="1.5" fill="#808080"/>
+        <circle cx="100" cy="45" r="1.5" fill="#808080"/>
+        <circle cx="100" cy="60" r="1.5" fill="#808080"/>
+        <circle cx="100" cy="75" r="1.5" fill="#808080"/>
+        
+        <!-- Repeated sections -->
+    
+        <!-- Defining a pattern of 10 dots -->
+        <defs>
+            <g id="dotsPattern">
+                <circle cx="100" cy="0" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="15" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="30" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="45" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="60" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="75" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="90" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="105" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="120" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="135" r="1.5" fill="#808080"/>
+            </g>
+        </defs>
+    
+        <!-- Loop through sections -->
+        <!-- Order: left, right, left, right, left, right -->
+        <g transform="translate(0,90)">
+            <rect x="95" y="0" width="10" height="10" fill="white"/>
+            <line x1="95" y1="5" x2="20" y2="5" stroke="#808080" stroke-width="1"/>
+            <use href="#dotsPattern" x="0" y="15"/>
+        </g>
+        
+        <g transform="translate(0,255)">
+            <rect x="95" y="0" width="10" height="10" fill="white"/>
+            <line x1="105" y1="5" x2="180" y2="5" stroke="#808080" stroke-width="1"/>
+            <use href="#dotsPattern" x="0" y="15"/>
+        </g>
+        
+        <g transform="translate(0,420)">
+            <rect x="95" y="0" width="10" height="10" fill="white"/>
+            <line x1="95" y1="5" x2="20" y2="5" stroke="#808080" stroke-width="1"/>
+            <use href="#dotsPattern" x="0" y="15"/>
+        </g>
+    
+        <g transform="translate(0,585)">
+            <rect x="95" y="0" width="10" height="10" fill="white"/>
+            <line x1="105" y1="5" x2="180" y2="5" stroke="#808080" stroke-width="1"/>
+            <use href="#dotsPattern" x="0" y="15"/>
+        </g>
+    
+        <g transform="translate(0,750)">
+            <rect x="95" y="0" width="10" height="10" fill="white"/>
+            <line x1="95" y1="5" x2="20" y2="5" stroke="#808080" stroke-width="1"/>
+            <use href="#dotsPattern" x="0" y="15"/>
+        </g>
+    
+        <g transform="translate(0,915)">
+            <rect x="95" y="0" width="10" height="10" fill="white"/>
+            <line x1="105" y1="5" x2="180" y2="5" stroke="#808080" stroke-width="1"/>
+            <circle cx="100" cy="0" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="15" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="30" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="45" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="60" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="75" r="1.5" fill="#808080"/>
+                <circle cx="100" cy="90" r="1.5" fill="#808080"/>
+        </g>
+    
+    
+    </svg>
+    
+    </div>
+
+    <div class="timeline-cards-right">
+        <!-- Molecule repeated 3 times as mentioned -->
+        <div class="timeline-card-container">
+          <img class="timeline-card-icon" src="design-images/vacation-icon-white.png" alt="Timeline Icon">
+          <div class="timeline-text-right">
+              <h1 class="yellow-lg-card-title">VACATION</h1>
+              <p class="sm-para">30 days paid annual vacation</p>
+          </div>
+        </div>
+        <div class="timeline-card-container timeline-card-middle">
+          <img class="timeline-card-icon" src="design-images/stipend-icon-white.png" alt="Timeline Icon">
+          <div class="timeline-text-right">
+              <h1 class="yellow-lg-card-title">STIPEND</h1>
+              <p class="sm-para">Money for books, meals, and <br> other living expenses</p>
+          </div>
+        </div>
+          <div class="timeline-card-container">
+            <img class="timeline-card-icon" src="design-images/healthcare-icon-white.png" alt="Timeline Icon">
+            <div class="timeline-text-right">
+                <h1 class="yellow-lg-card-title">HEALTHCARE</h1>
+                <p class="sm-para">Free healthcare for the family <br> members, reduced premiums for <br> Reserve and National Guard</p>
+            </div>
+          </div>
+        <!-- Repeat above for the 2 other times -->
+    </div>
+    </div>
+    <button class="yellow-btn" onclick="scrollToMoreBenefits()">EXPLORE BENEFITS</button>
+</div>
+
+
+
+
+
+
+  <div class="more-benefits" id="moreBenefits">
+    <!-- Card container organism 1 -->
+    <div class="card-container">
+        <!-- tile card_tile image molecule 1 -->
+        <div class="tile-card-tile-image" style="background-image: url(design-images/tile-how-to-join.jpg);">
+            <div class="text-container">
+                <h1 class="yellow-md-card-title">HOW TO JOIN</h1>
+                <p class="sm-para">Get started and find out the steps <br>needed to enlist</p>
+            </div>
+        </div>
+        <!-- tile card_tile image molecule 2 -->
+        <div class="tile-card-tile-image" style="background-image: url(design-images/tile-request-information.jpg);">
+            <div class="text-container">
+                <h1 class="yellow-md-card-title">REQUEST INFORMATION</h1>
+                <p class="sm-para">Get the answers you’re looking for<br>and more about the opportunities<br>the company has to offer</p>
+            </div>
+        </div>
+        <!-- tile card_tile image molecule 3 -->
+        <div class="tile-card-tile-image" style="background-image: url(design-images/tile-enlistment-bonuses.jpg);">
+            <div class="text-container">
+                <h1 class="yellow-md-card-title">ENLISTMENT BONUSES</h1>
+                <p class="sm-para">Find out what jobs are eligible for<br>enlistment bonuses</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card container organism 2 (Repeated) -->
+    <div class="card-container">
+        <!-- tile card_tile image molecule 4 -->
+        <div class="tile-card-tile-image" style="background-image: url(design-images/tile-basic-training.jpg);">
+            <div class="text-container">
+                <h1 class="yellow-md-card-title">BASIC TRAINING</h1>
+                <p class="sm-para">Find out what the first 10-weeks<br>are like to become a Soldier</p>
+            </div>
+        </div>
+        <!-- tile card_tile image molecule 5 -->
+        <div class="tile-card-tile-image" style="background-image: url(design-images/tile-explore-careers.jpg);">
+            <div class="text-container">
+                <h1 class="yellow-md-card-title">EXPLORE CAREERS</h1>
+                <p class="sm-para">Explore the wide range of career<br>opportunities available and the job<br>that's right for you</p>
+            </div>
+        </div>
+        <!-- tile card_tile image molecule 6 -->
+        <div class="tile-card-tile-image" style="background-image: url(design-images/tile-comprehensive-benefits.jpg);">
+            <div class="text-container">
+                <h1 class="yellow-md-card-title">COMPREHENSIVE BENEFITS</h1>
+                <p class="sm-para">Find out the total compensation<br>you'll receive as a Soldier</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      
+    
+</body>
+<script src="script3.js"></script>
+</html>
